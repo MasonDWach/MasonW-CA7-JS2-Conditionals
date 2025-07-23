@@ -28,9 +28,10 @@
     let playerCharacter = prompt('Who are you: Bear, Ninja, or Hunter?');
     let computerCharacter = "Bear";
 
+  if (computerCharacter === "Bear") {
     switch (playerCharacter) {
         case "Bear":
-            outcome = "It'a tie!!";
+            outcome = "It's a tie!!";
             console.log(outcome);
             break;
         case "Ninja":
@@ -42,7 +43,39 @@
             console.log(outcome);
             break;
     }
-
+  }
+  else if (computerCharacter === "Ninja") {
+    switch (playerCharacter) {
+        case "Bear":
+            outcome = "You Win!!";
+            console.log(outcome);
+            break;
+        case "Ninja":
+            outcome = "It's a tie!!";
+            console.log(outcome);
+            break;
+        case "Hunter":
+            outcome = "You Lose!!";
+            console.log(outcome);
+            break;
+    }
+  }
+  else if (computerCharacter === "Hunter") {
+    switch (playerCharacter) {
+        case "Bear":
+            outcome = "You Lose!!";
+            console.log(outcome);
+            break;
+        case "Ninja":
+            outcome = "You Win!!";
+            console.log(outcome);
+            break;
+        case "Hunter":
+            outcome = "It's a tie!!";
+            console.log(outcome);
+            break;
+    }
+  }
 
     // Create player and computer result message.
     let playerResult = `${playerName}, You picked ${playerCharacter}!`;
