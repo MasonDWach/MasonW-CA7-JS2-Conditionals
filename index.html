@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Mason Wachter">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+  <title>Bear Ninja Hunter</title>
+</head>
+
+<body>
+  <h1>Bear Ninja Hunter</h1>
+  <p id="output">Your result will appear here.</p>
+
+  <script>
+
+    // Prompt the player for their name.
+    let playerName = prompt('Welcome to Bear Hunter Ninja! Please enter your name to get started:'); 
+    
+    // Log the name to the console and display a confirmation message.
+    let nameConfirmation = `Hi ${playerName} Let's play!!`;
+        console.log(nameConfirmation + ' this is an example of a hardcoded text string concatenated after a variable.'); 
+        alert(nameConfirmation);
+
+    // Prompt the player to choose a character and set computer character to Bear.
+    let playerCharacter = prompt('Who are you: Bear, Ninja, or Hunter?');
+    let computerCharacter = "Bear";
+
+    switch (playerCharacter) {
+        case "Bear":
+            outcome = "It'a tie!!";
+            console.log(outcome);
+            break;
+        case "Ninja":
+            outcome = "You Lose!!";
+            console.log(outcome);
+            break;
+        case "Hunter":
+            outcome = "You Win!!";
+            console.log(outcome);
+            break;
+    }
+
+
+    // Create player and computer result message.
+    let playerResult = `${playerName}, You picked ${playerCharacter}!`;
+    let computerResult = `The computer picked ${computerCharacter}!`;
+        // Concatenate playerResult and computerResult messages then log the concatenated message to the console and display it on the page by changing the innerHTML of the output element.
+        console.log(`${playerResult}\n${computerResult}`);
+        document.getElementById('output').innerHTML = playerResult + '<br>' + computerResult;
+
+  </script>
+</body>
+</html>

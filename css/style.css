@@ -1,0 +1,18 @@
+body {
+    background-color: #003a08;
+}
+
+p {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: 'Crimson Pro', serif;
+    color: #eeeeee;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00;
+    font-family: 'UnifrakturCook', cursive;
+}
