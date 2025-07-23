@@ -19,7 +19,7 @@
     // Prompt the player for their name.
     let playerName = prompt('Welcome to Bear Hunter Ninja! Please enter your name to get started:'); 
     
-    // Log the name to the console and display a confirmation message.
+    // Log the name to the console and display a cosnfirmation message.
     let nameConfirmation = `Hi ${playerName} Let's play!!`;
         console.log(nameConfirmation + ' this is an example of a hardcoded text string concatenated after a variable.'); 
         alert(nameConfirmation);
@@ -48,8 +48,8 @@
     let playerResult = `${playerName}, You picked ${playerCharacter}!`;
     let computerResult = `The computer picked ${computerCharacter}!`;
         // Concatenate playerResult and computerResult messages then log the concatenated message to the console and display it on the page by changing the innerHTML of the output element.
-        console.log(`${playerResult}\n${computerResult}`);
-        document.getElementById('output').innerHTML = playerResult + '<br>' + computerResult;
+        console.log(`${playerResult}\n${computerResult}\n${outcome}`);
+        document.getElementById('output').innerHTML = playerResult + '<br>' + computerResult + '<br>' + outcome;
 
   </script>
 </body>
