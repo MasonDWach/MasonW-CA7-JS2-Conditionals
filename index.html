@@ -28,18 +28,16 @@
     let playerCharacter = prompt('Who are you: Bear, Ninja, or Hunter?');
     let computerCharacter = "Bear";
 
+    // Switch statement to determine the outcome of the game based on the player's choice. The outcome variable is assigned.
     switch (playerCharacter) {
         case "Bear":
             outcome = "It's a tie!!";
-            console.log(outcome);
             break;
         case "Ninja":
             outcome = "You Lose!!";
-            console.log(outcome);
             break;
         case "Hunter":
             outcome = "You Win!!";
-            console.log(outcome);
             break;
     }
 
